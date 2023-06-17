@@ -1,0 +1,129 @@
+.titleTexts {
+  color: #8668ff;
+  font-size: 30px;
+  position: static;
+  margin: 24px;
+  /* margin-bottom: ;    */
+}
+
+.btn {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Cherry Bomb One", cursive;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  opacity: 40%;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2030;
+
+  border-bottom: 1px solid black;
+
+  /* color: #272838; */
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.leftHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.leftHeaderContainer a {
+  margin-right: 16px;
+}
+
+.righttHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.logo {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.content {
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-bottom: 96px;
+}
+
+.productContainer {
+  max-height: 50%;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  color: #0c0d14;
+  background-color: #dddbf1;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+}
+
+.productContainer h1 {
+  color: #8668ff;
+}
+
+.footer {
+  background-color: #2274a5;
+  color: #272838;
+  padding: 16px;
+  margin-top: auto;
+}
+
+.btn-warning {
+  color: #ffffff;
+  background: #aaadbe;
+  border: none;
+  font-family: "Cherry Bomb One", cursive;
+  font-size: 20px;
+}
+
+.btn-warning:hover {
+  background: #8668ff;
+}
+
+.btn-primary {
+  background: #aaadbe;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #8668ff;
+}
+
+.dungeonMastersCarouselPage {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 32px;
+  padding-top: 0px;
+}
+
+.dungeonMastersCarouselItem {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #dddbf1;
+  border-radius: 8px;
+  margin: 8px;
+  margin-top: 0px;
+}
