@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Próximo RPG</title>
+    <link rel="stylesheet" href="../../assets/style/estiloFonte.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/global.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="flex-wrap justify-content-md-between border-bottom headerContainer">
+      <div class="leftHeaderContainer">
+        <a href="./home.html" class="logo">
+          <img id="logoImage" src="../../assets/img/logo2.png" width="70px"alt="Logo do Site RPG" />
+        </a>
+
+        <ul class="nav">
+          <li class="me-2"><a class="fonte" href="./dungeonMasters.html">Mestres</a></li>
+          <li class="me-2"><a class="fonte" href="./games.html">Mesas</a></li>
+          <li class="me-2"><a class="fonte" href="./products.html">Produtos RPG</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="righttHeaderContainer">
+        <a href="./carrinho.html" class="carrinho"> 
+          <img id="logoCarrinho" src="../../assets/img/carrinho.png" width="30px"alt="Carrinho" />
+        </a>
+        <a href="./editarPerfil.html">
+          <button type="button" class="btn btn-warning">Olá, João!</button>
+        </a>
+      </div>
+    </header>
+      
+    <div class="content">
+      <!-- PRODUCTS CAROUSEL -->
+      <h3 class="titleTexts fonte"> Produtos </h3>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img src="../../assets/img/products.jpg" class="bd-placeholder-img" width="100%" height="500px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+            <div class="container">
+              <div class="carousel-caption text-start productContainer">
+                <h3 class="titleTexts fonte">Livro do Jogador, livro do mestre e livro dos monstros</h3>
+                <p>Pacote "starter pack" para D&D 5e contendo o livro do jogador, livro do mestre e livro dos monstros. O pacote que você precisa para iniciar sua jornada no RPG!</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Comprar</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active carousel-item-start">
+            <img src="../../assets/img/products2.jpg" class="bd-placeholder-img" width="100%" height="500px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+            <div class="container">
+              <div class="carousel-caption productContainer">
+                <h3 class="titleTexts fonte">Another example headline.</h3>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Comprar</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-next carousel-item-start">
+            <img src="../../assets/img/products3.jpg" class="bd-placeholder-img" width="100%" height="500px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+            <div class="container">
+              <div class="carousel-caption text-end productContainer">
+                <h3 class="titleTexts fonte">One more for good measure.</h3>
+                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Comprar</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- DUNGEON MASTERS CAROUSEL -->
+      <h3 class="titleTexts fonte" style="margin-top: 48px;"> Mestres em Destaque </h3>
+      <div id="dungeonMastersCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#dungeonMastersCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#dungeonMastersCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#dungeonMastersCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item">
+            <div class="dungeonMastersCarouselPage">
+              <div class="row">
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item active carousel-item-start">
+            <div class="dungeonMastersCarouselPage">
+              <div class="row">
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-item-next carousel-item-start">
+            <div class="dungeonMastersCarouselPage">
+              <div class="row">
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                <div class="dungeonMastersCarouselItem">
+                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
+                  <h2 class="fw-normal">Heading</h2>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum</p>
+                  <p><a class="btn btn-secondary" href="#">View details »</a></p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <button class="carousel-control-prev" style="width: auto;" type="button" data-bs-target="#dungeonMastersCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" style="width: auto;" type="button" data-bs-target="#dungeonMastersCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+      <!-- LISTA DE MESAS -->
+      <h3 class="titleTexts fonte"> Mesas com vagas </h3>
+      <div style="padding: 48px; padding-top: 0px;">
+
+        <div class="row featurette" style="background-color: #DDDBF1; border-radius: 8px; padding: 16px;">
+          <div class="col-md-7">
+            <h3 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h3>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="../../assets/img/gamePhoto.png" class="bd-placeholder-img" width="100%" height="500px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" style="color: white;">
+
+        <div class="row featurette" style="background-color: #DDDBF1; border-radius: 8px; padding: 16px;">
+          <div class="col-md-7">
+            <h3 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h3>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="../../assets/img/gamePhoto.png" class="bd-placeholder-img" width="100%" height="500px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" style="color: white;">
+
+        <div class="row featurette" style="background-color: #DDDBF1; border-radius: 8px; padding: 16px;">
+          <div class="col-md-7">
+            <h3 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h3>
+            <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="../../assets/img/gamePhoto.png" class="bd-placeholder-img" width="100%" height="500px" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></img>
+          </div>
+        </div>
+
+        <hr class="featurette-divider" style="color: white;">
+
+      </div>
+
+    </div>
+
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright
+          <a class="text-white" href="https://mdbootstrap.com/"></a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   
+</body>
+
+  <style>
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+    
+    body {
+      display: flex; 
+      flex-direction: column;
+      background-color: #0C0D14;
+    }
+
+    header a {
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    header a:hover {
+        color: #8668FF;
+    }
+
+    .titleTexts {
+        color: #8668FF;
+        font-size: 30px;
+        position: static;
+        margin: 24px; 
+        /* margin-bottom: ;    */
+    }
+
+    .btn {
+        color: #FFFFFF; 
+        font-size: 20px; 
+        font-family: 'Cherry Bomb One', cursive;
+    }
+    
+    .background {
+      position: absolute;
+      z-index: -1;
+      opacity: 40%;
+    }
+
+    .carrinho{
+      padding-right: 20px;
+      
+    }
+
+    .headerContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1F2030;
+  
+      border-bottom: 1px solid black;
+    
+      /* color: #272838; */
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    .leftHeaderContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+    }
+
+    .leftHeaderContainer a {
+      margin-right: 16px;
+    }
+
+    .righttHeaderContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+    }
+
+    .logo {
+      align-self: flex-end;
+      justify-self: flex-end;
+    }
+
+    .content { 
+      padding-left: 48px;
+      padding-right: 48px;
+      margin-bottom: 96px;
+    }
+
+    .productContainer { 
+      max-height: 50%;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      color: #0C0D14;
+      background-color: #DDDBF1;
+
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /* white-space: nowrap; */
+    }
+
+    .productContainer h1 {
+      color: #8668FF
+    }
+    
+    .footer {
+      background-color: #2274A5;
+      color: #272838;
+      padding: 16px;
+      margin-top: auto;
+    }
+
+    .btn-warning {
+      color:#FFFFFF;
+      background: #AAADBE; 
+      border: none;
+      font-family: 'Cherry Bomb One', cursive;
+      font-size: 20px;
+    }
+
+    .btn-warning:hover{
+      background: #8668FF;
+    }
+   
+    .btn-primary{
+      background: #AAADBE; 
+      border: none;
+    }
+
+    .btn-primary:hover {
+        background: #8668FF;
+    }
+
+    .dungeonMastersCarouselPage { 
+      display: flex; 
+      flex: 1;
+      justify-content: space-between;
+      padding: 32px;
+      padding-top: 0px;
+      
+    }
+
+    .dungeonMastersCarouselItem { 
+      display: flex; 
+      flex: 1;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #DDDBF1;
+      border-radius: 8px;
+      margin: 8px;
+      margin-top: 0px;
+    }
+
+
+  </style>
+
+</html>
