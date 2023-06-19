@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Próximo RPG</title>
+    <link rel="stylesheet" href="../../assets/style/estiloFonte.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/global.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="flex-wrap justify-content-md-between border-bottom headerContainer">
+      <div class="leftHeaderContainer">
+        <a href="./home.html" class="logo">
+          <img id="logoImage" src="../../assets/img/logo2.png" width="70px"alt="Logo do Site RPG" />
+        </a>
+
+        <ul class="nav">
+          <li class="me-2"><a class="fonte" href="./dungeonMasters.html">Mestres</a></li>
+          <li class="me-2"><a class="fonte" href="./games.html">Mesas</a></li>
+          <li class="me-2"><a class="fonte" href="./products.html">Produtos RPG</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="righttHeaderContainer">
+        <a href="./carrinho.html" class="carrinho"> 
+          <img id="logoCarrinho" src="../../assets/img/carrinho.png" width="30px"alt="Carrinho" />
+        </a>
+        <a href="./editarPerfil.html">
+          <button type="button" class="btn btn-warning">Olá, João!</button>
+        </a>
+      </div>
+    </header>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    
+    <!--
+    User Profile Sidebar by @keenthemes
+    A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+    Licensed under MIT
+    -->
+    
+    <div class="container">
+        <div class="row profile">
+            <div class="col-md-3">
+                <div class="profile-sidebar">
+                    <!-- SIDEBAR USERPIC -->
+                    <div class="profile-userpic">
+                        <img src="../../assets/img/user.png" class="img-responsive" alt="">
+                    </div>
+                    <!-- END SIDEBAR USERPIC -->
+                    <!-- SIDEBAR USER TITLE -->
+                    <div class="profile-usertitle">
+                        <div class="profile-usertitle-name">
+                            João Santos
+                        </div>
+                        
+                    </div>
+                    
+                    <!-- END SIDEBAR BUTTONS -->
+                    <!-- SIDEBAR MENU -->
+                    <div class="profile-usermenu">
+                      <ul class="nav">
+                          <li>
+                              <a href="./editarPerfil.html"target="_blank">
+                              <i class="glyphicon glyphicon-pencil"></i>
+                              Editar perfil </a>
+                          </li>
+                          <li class="active">
+                              <a href="./perfil-compras.html">
+                              <i class="glyphicon  glyphicon-list-alt"></i>
+                              Minhas compras </a>
+                          </li>
+                          
+                          
+                          
+                        
+                          <li>
+                              <a href="./perfil-mestre.html">
+                              <i class="glyphicon glyphicon-user"></i>
+                              Mestre </a>
+                          </li>
+                          <li>
+                            <a href="../visitor/home.html">
+                            <i class="glyphicon   glyphicon-off"></i>
+                            Sair </a>
+                        </li>
+                          <li>
+                              <a href="./perfil-excluir.html">
+                              <i class="glyphicon  glyphicon-trash"></i>
+                              Excluir conta </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- END MENU -->
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="profile-content">
+                   <h1 class="perfil">Tem certeza que deseja excluir esta mesa?</h1>
+                   <br><br>
+                 
+                <a href="../visitor/home.html" class="button-link">Sim</a>
+                <br>
+                <a href="./home.html" class="button-link">Não</a>
+    </div>
+    
+    
+    
+    <br>
+    <br>
+    
+
+
+    <footer class="text-center text-white footer">
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright
+          <a class="text-white" href="https://mdbootstrap.com/"></a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   
+</body>
+
+<style>
+
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    display: flex; 
+    flex-direction: column;
+    background-color: #0C0D14;
+  }
+
+  header a {
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  header a:hover {
+      color: #8668FF;
+  }
+
+  .titleTexts {
+      color: #8668FF;
+      font-size: 30px;
+      position: static;
+      margin: 24px; 
+      margin-left: 0px;
+  }
+
+  .carrinho{
+      padding-right: 20px;
+      
+    }
+
+  .btn {
+      color: #FFFFFF; 
+      font-size: 20px; 
+      font-family: 'Cherry Bomb One', cursive;
+  }
+  
+  .background {
+    position: absolute;
+    z-index: -1;
+    opacity: 40%;
+  }
+
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2030;
+
+    border-bottom: 1px solid black;
+  
+    /* color: #272838; */
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .leftHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  .leftHeaderContainer a {
+    margin-right: 16px;
+  }
+
+  .righttHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  .logo {
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  .content { 
+    display: flex;
+    flex-direction: row;
+    padding: 48px;
+    margin-bottom: 96px;
+  }
+  
+  .footer {
+    background-color: #2274A5;
+    color: #272838;
+    padding: 16px;
+    margin-top: auto;
+  }
+
+  .btn-warning {
+    color:#FFFFFF;
+    background: #AAADBE; 
+    border: none;
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 20px;
+  }
+
+  .btn-warning:hover{
+    background: #8668FF;
+  }
+ 
+  .btn-primary{
+    background: #AAADBE; 
+    border: none;
+  }
+
+  .btn-primary:hover {
+      background: #8668FF;
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  
+
+  .footer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #1F2030;
+  }
+
+  .ADsColumns {
+    opacity: 60%;
+    background-color: #D9D9D9;
+  }
+
+  .search-button{
+      background: #8668FF; 
+      border: none;
+      font-family: 'Cherry Bomb One', cursive;
+    }
+
+    .search-button:hover {
+        background: #AAADBE;
+    }
+    body {
+  background: #0C0D14;
+}
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #dddbf1;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #272838;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+  
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color:#8668FF;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 300px;
+  border-radius: 10px;
+}
+
+.perfil{
+    color:#1F2030;
+    font-family:'Cherry Bomb One', cursive;
+}
+
+.vertical-line{
+    display: inline-block;
+  width: 1px;
+  height: 1em;
+  background-color: black;
+  vertical-align: middle;
+  margin: 0 5px;
+
+}
+
+.textBold{
+    font-weight: bold;
+    font-size: 25px;
+    
+}
+
+.button-link {
+        padding: 10px 20px;
+        background-color:#93a3b5;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-family: 'Cherry Bomb One', cursive;
+        font-size: 20px;
+      }
+
+      .button-link:hover {
+        background-color: #8668ff;
+        text-decoration: none;
+        color:#000000;
+      }
+
+      
+
+
+</style>
+
+</html>
